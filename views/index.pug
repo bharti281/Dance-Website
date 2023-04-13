@@ -1,0 +1,56 @@
+doctype html 
+html 
+    head 
+    title Dance Academy
+    style 
+        include ../static/style.css 
+    body
+        nav#navbar 
+            ul
+                div#logo
+                    img(src="/static/logo.png")
+                    |Dance Academy
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services ]
+                li #[a(href="/") Contact us]
+                li #[a(href="/") Class info]
+        section#introSection
+            div Welcome To Dance Academy
+            div.small Eat Sleep Dance Reapeat
+        section#missionSection 
+
+            h2 Our Mission
+            div.card
+                h3 Dance perfection
+                div.cardBox
+                    div.card-img
+                        img(src="/static/logo.png")
+                    div.card-content
+                        p This is the best dance academy of the unverse
+            div.card
+                h3 Dance the way you like
+                div.cardBox
+                    div.card-img
+                        img(src="/static/pic1.png")
+                    div.card-content
+                        p This is the best dance academy of the unverse
+            div.card
+                h3 Expert teaching
+                div.cardBox
+                    div.card-img
+                        img(src="/static/pic2.png")
+                    div.card-content
+                        p This is the best dance academy of the unverse
+        section#sponsorsSection 
+            h2 Our Sponsors
+            div#sponsors
+                img(src='/static/zo.png' alt="reloade" class="spImage")
+                img(src='/static/do.png' alt="reloade" class="spImage")
+                img(src='/static/kfc.png' alt="reloade" class="spImage")
+                img(src='/static/sw.png' alt="reloade" class="spImage")
+        
+        footer#footer 
+            |Copyright &copy; 2019 Danceacademy.com all right reserved
+        script 
+            include  ../static/index.js
